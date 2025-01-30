@@ -1,0 +1,18 @@
+body {
+  background-image: url(https://i.postimg.cc/cJHQn4YX/temp-Imageb-HBXc-C.avif);
+  
+  background-size: cover;
+  
+  background-position: center;
+  
+ 
+  background-repeat: no-repeat;
+  
+  background-attachment: fixed;
+
+  height: 100vh;
+}
+
+selector {
+  background-image: url('path-to-image.jpg');
+}
