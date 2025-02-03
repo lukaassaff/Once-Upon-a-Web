@@ -16,6 +16,12 @@ body.index-page {
   color: beige;
 }
 
+.rightbutton 
+    {
+    position: absolute;
+    right: 0;
+}
+
 header {
   text-align: center;
   padding: 20px;
