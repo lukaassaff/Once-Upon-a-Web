@@ -115,77 +115,77 @@ nav a:hover {
 }
 .balls-container {
   display: flex;
-  gap: 40px;       
+  gap: 10px;       
   width: 100%;
 }
 
 .bounce-page .ball1 {
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   background-color: #9c4343;
   animation-duration: 2s;
 }
 
 .bounce-page .ball2 {
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   background-color: #2e2525;
   animation-duration: 3s;
 }
 
 .bounce-page .ball3 {
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   background-color: #633636;
   animation-duration: 1s;
 }
 
 .bounce-page .ball4 {
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   background-color: #9c4343;
   animation-duration: 4s;
 }
 
 .bounce-page .ball5 {
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   background-color: #2e2525;
   animation-duration: 2s;
 }
 
 .bounce-page .ball6 {
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   background-color: #9c4343;
   animation-duration: 3s;
 }
 .bounce-page .ball7 {
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   background-color: #381010;
   animation-duration: 1s;
 }
 
 .bounce-page .ball8 {
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   background-color: #633636;
   animation-duration: 4s;
 }
 
 .bounce-page .ball9 {
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   background-color: #9c4343;
   animation-duration: 2s;
 }
