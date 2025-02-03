@@ -35,6 +35,7 @@ nav {
 }
 
 nav a {
+  /* Default nav links for pages with a dark background */
   color: beige;
   text-decoration: none;
   margin: 0 10px;
@@ -45,6 +46,11 @@ nav a {
 nav a:hover {
   color: yellow;
   transform: scale(1.1);
+}
+
+/* For bounce-page, override nav link color so they’re visible on the light background */
+.bounce-page nav a {
+  color: black;
 }
 
 /* Fixed Footer */
@@ -62,7 +68,6 @@ nav a:hover {
 }
 
 /* Pages 2,4,5 */
-
 .black-page {
   background-color: black;
   color: beige;
@@ -75,12 +80,12 @@ nav a:hover {
   margin: 20px;
   border-radius: 8px;
 }
+
 .no-footer .fixed-footer {
   display: none;
 }
 
 /* Bounce balls */
-
 .bounce-page {
   display: flex;
   flex-direction: column; 
@@ -110,6 +115,7 @@ nav a:hover {
 .bounce-page .ball {
   border-radius: 50%;
   position: relative;
+  will-change: transform;
   animation: bounce infinite;
 }
 
@@ -135,12 +141,12 @@ nav a:hover {
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
+  0% { transform: translateY(0px); }
   50% { transform: translateY(-100px); }
+  100% { transform: translateY(0px); }
 }
 
-/* Page 5*/
-
+/* Page 5 */
 .custom-link {
   text-align: center;
   margin: 20px;
