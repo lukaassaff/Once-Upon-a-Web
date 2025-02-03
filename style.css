@@ -1,18 +1,85 @@
+/* Base Styles */
 body {
+  font-family: "Times New Roman", serif;
+  background-color: black;
+  color: beige;
   background-image: url(https://i.postimg.cc/cJHQn4YX/temp-Imageb-HBXc-C.avif);
-  
   background-size: cover;
-  
   background-position: center;
-  
- 
   background-repeat: no-repeat;
-  
   background-attachment: fixed;
-
   height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
-selector {
-  background-image: url('path-to-image.jpg');
+header {
+  text-align: center;
+  padding: 20px;
 }
+
+section {
+  background-color: blue;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+/* Navigation Styles */
+nav {
+  text-align: center;
+  margin: 20px;
+}
+
+nav a {
+  color: beige;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 18px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  color: yellow;
+  transform: scale(1.1);
+}
+
+/* Fixed Footer */
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: beige;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 24px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+header h1 {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Button (if used on any page) */
+button {
+  background-color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #ddd;
+}
+
