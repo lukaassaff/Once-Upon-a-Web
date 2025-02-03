@@ -170,3 +170,33 @@ nav a:hover {
   margin-top: 10px;
   font-size: 1.2em;
 }
+
+/* Centered Button */
+.center-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0; /* Change this as needed */
+}
+
+.center-container {
+  text-align: center;
+}
+
+.click-here-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.click-here-button:hover {
+  background-color: #eee;
+  transform: scale(1.05);
+}
+
