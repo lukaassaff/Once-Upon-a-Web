@@ -129,7 +129,7 @@ nav a:hover {
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  background-color: #9c4343;
+  background-color: white;
   animation-duration: 2s;
 }
 
@@ -145,7 +145,7 @@ nav a:hover {
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  background-color: #633636;
+  background-color: black;
   animation-duration: 1s;
 }
 
@@ -169,14 +169,14 @@ nav a:hover {
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  background-color: #9c4343;
+  background-color: white;
   animation-duration: 3s;
 }
 .bounce-page .ball7 {
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  background-color: #381010;
+  background-color: black;
   animation-duration: 1s;
 }
 
