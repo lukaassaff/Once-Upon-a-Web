@@ -195,29 +195,11 @@ nav a:hover {
   100% { transform: translateY(0px); }
 }
 
-/* Page 5 */
-.custom-link {
+/* Page 4 */
+.images {
   text-align: center;
   margin: 20px;
-}
-
-.custom-link a {
-  color: beige;
-  text-decoration: none;
-}
-
-.custom-link img {
-  max-width: 100%;
-  height: auto;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  display: block;
-  margin: 0 auto;
-}
-
-.custom-link p {
-  margin-top: 10px;
-  font-size: 1.2em;
+  gap: 10px;
 }
 
 /* Centered Button */
