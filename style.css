@@ -107,11 +107,6 @@ nav a:hover {
   color: black;
 }
 
-.bounce-page p {
-  font-size: 1.5em;
-  margin: 0.2em;
-}
-
 /* Bouncing balls */
 .bounce-page .ball {
   border-radius: 50%;
@@ -136,18 +131,18 @@ nav a:hover {
 
 .bounce-page .ball2 {
   border-radius: 50%;
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   background-color: #2e2525;
-  animation-duration: 4s;
+  animation-duration: 2s;
 }
 
 .bounce-page .ball3 {
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   background-color: #361d1d;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 
 @keyframes bounce {
