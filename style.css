@@ -199,5 +199,6 @@ nav a:hover {
 .click-here-button:hover {
   background-color: #eee;
   transform: scale(1.05);
+  text-align: center;
 }
 
