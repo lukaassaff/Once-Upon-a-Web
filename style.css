@@ -48,7 +48,7 @@ nav a:hover {
   transform: scale(1.1);
 }
 
-/* For bounce-page, override nav link color so they’re visible on the light background */
+/* For bounce-page so visible white background */
 .bounce-page nav a {
   color: black;
 }
@@ -90,9 +90,8 @@ nav a:hover {
   display: flex;
   flex-direction: column; 
   justify-content: space-around;
-  align-items: center;
   height: 100vh;
-  background-color: #f0f0f0;
+  background-color: #b3b1b1;
   margin: 0;
 }
 
@@ -102,8 +101,10 @@ nav a:hover {
 }
 
 .bounce-page h1 {
-  font-size: 3em;
-  margin: 0.2em;
+  background-color: #6e6d6d;
+  text-align: center;
+  font-size: 45px;
+  color: black;
 }
 
 .bounce-page p {
