@@ -16,10 +16,9 @@ body.index-page {
   color: beige;
 }
 
-.rightbutton 
-    {
-    position: absolute;
-    right: 0;
+.rightbutton {
+  position: absolute;
+  right: 0;
 }
 
 header {
@@ -41,7 +40,6 @@ nav {
 }
 
 nav a {
-  /* Default nav links for pages with a dark background */
   color: beige;
   text-decoration: none;
   margin: 0 10px;
@@ -54,7 +52,7 @@ nav a:hover {
   transform: scale(1.1);
 }
 
-/* For bounce-page so visible white background */
+/* Bounce-page specific nav links */
 .bounce-page nav a {
   color: black;
 }
@@ -73,7 +71,7 @@ nav a:hover {
   font-size: 80px;
 }
 
-/* Pages 2,4,5 */
+/* Black and White Pages */
 .black-page {
   background-color: black;
   color: beige;
@@ -91,7 +89,7 @@ nav a:hover {
   display: none;
 }
 
-/* Bounce balls */
+/* Bounce Page */
 .bounce-page {
   display: flex;
   flex-direction: column; 
@@ -113,92 +111,58 @@ nav a:hover {
   color: black;
 }
 
-/* Bouncing balls */
+/* Bouncing Balls */
 .bounce-page .ball {
   border-radius: 50%;
   position: relative;
   animation: bounce infinite;
+  /* Optional: overlay a soccer ball texture */
 }
+
+.bounce-page .ball.soccer-ball {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6e/Soccer_ball.svg');
+  background-size: cover;
+  background-position: center;
+  /* Add a rolling effect */
+  animation: bounce infinite, roll 3s linear infinite;
+}
+
 .balls-container {
   display: flex;
   gap: 10px;       
   width: 100%;
 }
 
-.bounce-page .ball1 {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  background-color: white;
-  animation-duration: 2s;
-}
-
-.bounce-page .ball2 {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  background-color: black;
-  animation-duration: 3s;
-}
-
-.bounce-page .ball3 {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  background-color: white;
-  animation-duration: 1s;
-}
-
-.bounce-page .ball4 {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  background-color: black;
-  animation-duration: 4s;
-}
-
-.bounce-page .ball5 {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  background-color: white;
-  animation-duration: 2s;
-}
-
-.bounce-page .ball6 {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  background-color: black;
-  animation-duration: 3s;
-}
-.bounce-page .ball7 {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  background-color: white;
-  animation-duration: 1s;
-}
-
-.bounce-page .ball8 {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  background-color: black;
-  animation-duration: 4s;
-}
-
+.bounce-page .ball1,
+.bounce-page .ball3,
+.bounce-page .ball5,
+.bounce-page .ball7,
 .bounce-page .ball9 {
-  border-radius: 50%;
   width: 150px;
   height: 150px;
   background-color: white;
   animation-duration: 2s;
 }
+
+.bounce-page .ball2,
+.bounce-page .ball4,
+.bounce-page .ball6,
+.bounce-page .ball8 {
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  animation-duration: 3s;
+}
+
 @keyframes bounce {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-100px); }
   100% { transform: translateY(0px); }
+}
+
+@keyframes roll {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
 }
 
 /* Page 4 */
@@ -235,10 +199,10 @@ nav a:hover {
 
 .click-here-button:hover {
   background-color: #eee;
-  transform: scale(1.05);
-  text-align: center;
+  transform: scale(1.1) rotate(5deg);
 }
 
+/* Slide-up animation for images */
 @keyframes slideUp {
   from {
     transform: translateY(50px);
@@ -254,6 +218,7 @@ nav a:hover {
   animation: slideUp 5s ease-out;
 }
 
+/* Fade-in animation */
 @keyframes fadeIn {
   from { opacity: 0; }
   to   { opacity: 1; }
@@ -264,10 +229,8 @@ nav a:hover {
 }
 
 img {
-   max-width: 100%;
-   height: auto;
-   display: block;
-   margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
-
-
