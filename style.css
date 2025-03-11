@@ -234,3 +234,32 @@ img {
   display: block;
   margin: 0 auto;
 }
+
+.roll-container {
+  position: relative;
+  height: 200px; 
+  overflow: hidden;
+}
+
+
+.roll-across {
+  position: absolute;
+  top: 50%;
+  left: -150px;
+  width: 150px;
+  height: 150px;
+  transform: translateY(-50%);
+  animation: rollAcross 5s linear infinite;
+}
+
+@keyframes rollAcross {
+  0% {
+    left: -150px;
+    transform: translateY(-50%) rotate(0deg);
+  }
+  100% {
+    left: calc(100% + 150px);
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
+
