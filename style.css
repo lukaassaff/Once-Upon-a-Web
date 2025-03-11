@@ -211,7 +211,11 @@ img {
   width: 100px; 
   height: 100px;
   transform: translateY(-50%);
+  /*
+  background-image: url(' https://github.com/lukaassaff/Once-Upon-a-Web/blob/main/soccer-ball.jpg');
+  background-size: cover;
   background-position: center;
+  */
   animation: rollAcross 3s linear infinite;
 }
 
