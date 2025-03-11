@@ -238,19 +238,21 @@ img {
 .roll-container {
   position: relative;
   width: 100%; 
-  height: 200px;
+  height: 250px;
   overflow: hidden;
 }
-
 
 .roll-across {
   position: absolute;
   top: 50%;
-  left: -70px; 
+  left: -150px; 
   width: 150px;
   height: 150px;
   transform: translateY(-50%);
-  animation: rollAcross 5s linear infinite !important; 
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6e/Soccer_ball.svg');
+  background-size: cover;
+  background-position: center;
+  animation: rollAcross 5s linear infinite;
 }
 
 @keyframes rollAcross {
@@ -263,5 +265,6 @@ img {
     transform: translateY(-50%) rotate(360deg);
   }
 }
+
 
 
