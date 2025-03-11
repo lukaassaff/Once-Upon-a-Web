@@ -237,7 +237,8 @@ img {
 
 .roll-container {
   position: relative;
-  height: 200px; 
+  width: 100%; 
+  height: 200px;
   overflow: hidden;
 }
 
@@ -245,11 +246,11 @@ img {
 .roll-across {
   position: absolute;
   top: 50%;
-  left: -150px;
+  left: -70px; 
   width: 150px;
   height: 150px;
   transform: translateY(-50%);
-  animation: rollAcross 5s linear infinite;
+  animation: rollAcross 5s linear infinite !important; 
 }
 
 @keyframes rollAcross {
@@ -262,4 +263,5 @@ img {
     transform: translateY(-50%) rotate(360deg);
   }
 }
+
 
