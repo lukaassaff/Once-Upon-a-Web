@@ -115,54 +115,14 @@ nav a:hover {
 .bounce-page .ball {
   border-radius: 50%;
   position: relative;
-  animation: bounce infinite;
-  /* Optional: overlay a soccer ball texture */
-}
-
-.bounce-page .ball.soccer-ball {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6e/Soccer_ball.svg');
-  background-size: cover;
-  background-position: center;
-  /* Add a rolling effect */
-  animation: bounce infinite, roll 3s linear infinite;
+  animation: none;
+  background-color: black; 
 }
 
 .balls-container {
   display: flex;
   gap: 10px;       
   width: 100%;
-}
-
-.bounce-page .ball1,
-.bounce-page .ball3,
-.bounce-page .ball5,
-.bounce-page .ball7,
-.bounce-page .ball9 {
-  width: 150px;
-  height: 150px;
-  background-color: white;
-  animation-duration: 2s;
-}
-
-.bounce-page .ball2,
-.bounce-page .ball4,
-.bounce-page .ball6,
-.bounce-page .ball8 {
-  width: 150px;
-  height: 150px;
-  background-color: black;
-  animation-duration: 3s;
-}
-
-@keyframes bounce {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-100px); }
-  100% { transform: translateY(0px); }
-}
-
-@keyframes roll {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
 }
 
 /* Page 4 */
@@ -239,35 +199,30 @@ img {
 .roll-container {
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 250px;   
   overflow: hidden;
-  background-color: #c9c7c7; 
 }
 
 /* Grey Ball with Soccer Ball Image */
 .roll-across {
   position: absolute;
   top: 50%;
-  left: -150px; 
-  width: 150px;
-  height: 150px;
-  border-radius: 50%; 
-  background-color: grey;
-  background-image: url('https://github.com/lukaassaff/Once-Upon-a-Web/blob/main/soccer-ball.jpg'); 
-  background-size: cover; 
+  left: 0px;  
+  width: 100px; 
+  height: 100px;
+  transform: translateY(-50%);
   background-position: center;
-  transform: translateY(-50%); 
-  animation: rollAcross 3s linear infinite; 
+  animation: rollAcross 3s linear infinite;
 }
 
 /* Keyframes for Rolling Across */
 @keyframes rollAcross {
   0% {
-    left: -150px; 
+    left: 0px; 
     transform: translateY(-50%) rotate(0deg); 
   }
   100% {
-    left: calc(100% + 150px);
+    left: calc(100%);
     transform: translateY(-50%) rotate(360deg);
   }
 }
