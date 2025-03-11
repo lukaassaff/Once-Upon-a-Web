@@ -242,20 +242,20 @@ img {
   height: 250px;
   overflow: hidden;
   border: 2px solid red; /* Debugging: You can remove this later */
-  background-color: #c9c7c7; /* Light grey background */
+  background-color: #c9c7c7; 
 }
 
 /* Grey Ball */
 .roll-across {
   position: absolute;
   top: 50%;
-  left: -150px; /* Start off-screen to the left */
+  left: -150px;
   width: 150px;
   height: 150px;
-  border-radius: 50%; /* Makes it a circle */
-  background-color: grey; /* Grey color */
-  transform: translateY(-50%); /* Centers the ball vertically */
-  animation: rollAcross 3s linear infinite; /* Add the animation */
+  border-radius: 50%; 
+  background-color: grey; 
+  transform: translateY(-50%); 
+  animation: rollAcross 3s linear infinite;
 }
 
 /* Keyframes for Rolling Across */
