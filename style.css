@@ -235,34 +235,38 @@ img {
   margin: 0 auto;
 }
 
+/* Roll Container */
 .roll-container {
   position: relative;
-  width: 100%; 
+  width: 100%;
   height: 250px;
   overflow: hidden;
+  background-color: #c9c7c7; /* Match the background of the bounce-page */
 }
 
+/* Rolling Ball */
 .roll-across {
   position: absolute;
   top: 50%;
-  left: -150px; 
+  left: -150px; /* Start off-screen */
   width: 150px;
   height: 150px;
-  transform: translateY(-50%);
+  border-radius: 50%; /* Ensure the ball is round */
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6e/Soccer_ball.svg');
   background-size: cover;
   background-position: center;
-  animation: rollAcross 5s linear infinite;
+  animation: rollAcross 3s linear infinite; /* Adjusted duration to 3s */
 }
 
+/* Keyframes for Rolling Across */
 @keyframes rollAcross {
   0% {
-    left: -150px;
-    transform: translateY(-50%) rotate(0deg);
+    left: -150px; /* Start off-screen */
+    transform: translateY(-50%) rotate(0deg); /* Initial rotation */
   }
   100% {
-    left: calc(100% + 150px);
-    transform: translateY(-50%) rotate(360deg);
+    left: calc(100% + 150px); /* End off-screen */
+    transform: translateY(-50%) rotate(360deg); /* Full rotation */
   }
 }
 
