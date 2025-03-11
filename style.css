@@ -249,16 +249,16 @@ img {
 .roll-across {
   position: absolute;
   top: 50%;
-  left: -150px; /* Start off-screen to the left */
+  left: -150px; 
   width: 150px;
   height: 150px;
-  border-radius: 50%; /* Makes it a circle */
-  background-color: grey; /* Fallback color */
-  background-image: url('https://github.com/your-username/your-repo/raw/main/soccer-ball.png'); /* Use the GitHub URL */
-  background-size: cover; /* Ensures the image covers the ball */
-  background-position: center; /* Centers the image */
-  transform: translateY(-50%); /* Centers the ball vertically */
-  animation: rollAcross 3s linear infinite; /* Add the animation */
+  border-radius: 50%; 
+  background-color: grey;
+  background-image: url('https://github.com/lukaassaff/Once-Upon-a-Web/blob/main/soccer-ball.jpg'); 
+  background-size: cover; 
+  background-position: center;
+  transform: translateY(-50%); 
+  animation: rollAcross 3s linear infinite; 
 }
 
 /* Keyframes for Rolling Across */
