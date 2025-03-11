@@ -261,12 +261,12 @@ img {
 /* Keyframes for Rolling Across */
 @keyframes rollAcross {
   0% {
-    left: -150px; /* Start off-screen to the left */
-    transform: translateY(-50%) rotate(0deg); /* Initial rotation */
+    left: -150px; 
+    transform: translateY(-50%) rotate(0deg); 
   }
   100% {
-    left: calc(100% + 150px); /* End off-screen to the right */
-    transform: translateY(-50%) rotate(360deg); /* Full rotation */
+    left: calc(100% + 150px);
+    transform: translateY(-50%) rotate(360deg);
   }
 }
 
