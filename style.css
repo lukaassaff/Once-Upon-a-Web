@@ -119,8 +119,6 @@ nav a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* Optional: remove background-attachment if causing issues */
-  /* background-attachment: fixed; */
 }
 
 @keyframes rollAcross {
