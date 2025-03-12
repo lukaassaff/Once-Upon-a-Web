@@ -111,20 +111,6 @@ nav a:hover {
   color: black;
 }
 
-/* Bouncing Balls */
-.bounce-page .ball {
-  border-radius: 50%;
-  position: relative;
-  animation: none;
-  background-color: black; 
-}
-
-.balls-container {
-  display: flex;
-  gap: 10px;       
-  width: 100%;
-}
-
 /* Page 4 */
 .images {
   text-align: center;
@@ -196,8 +182,8 @@ img {
 }
 
 .ball {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background-color: black;
   border-radius: 50%;
   position: relative;
