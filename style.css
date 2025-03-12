@@ -92,12 +92,46 @@ nav a:hover {
 /* Bounce Page */
 .bounce-page {
   display: flex;
-  flex-direction: column; 
-  justify-content: space-around;
-  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
   background-color: #c9c7c7;
   margin: 0;
 }
+
+.roll-container {
+  position: relative;
+  width: 100%;
+  height: 250px; 
+  overflow: hidden;
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  background-color: black; 
+  border-radius: 50%;
+  position: relative;
+  animation: rollAcross 3s linear infinite;
+  margin: 50px; 
+  background-image: url('https://i.postimg.cc/Dw2D8Krx/soccer-ball.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Optional: remove background-attachment if causing issues */
+  /* background-attachment: fixed; */
+}
+
+/* Keyframes for rolling across the screen */
+@keyframes rollAcross {
+  0% {
+    transform: translateX(-100px) rotate(0deg);
+  }
+  100% {
+    transform: translateX(calc(100vw + 100px)) rotate(360deg);
+  }
+}
+
 
 .bounce-page header {
   text-align: center;
