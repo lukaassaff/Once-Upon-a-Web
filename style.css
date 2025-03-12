@@ -122,7 +122,6 @@ nav a:hover {
   /* background-attachment: fixed; */
 }
 
-/* Keyframes for rolling across the screen */
 @keyframes rollAcross {
   0% {
     transform: translateX(-100px) rotate(0deg);
@@ -213,30 +212,6 @@ img {
   height: auto;
   display: block;
   margin: 0 auto;
-}
-
-.ball {
-  width: 200px;
-  height: 200px;
-  background-color: black;
-  border-radius: 50%;
-  position: relative;
-  animation: rollAcross 3s linear infinite;
-  margin: 50px;
-  background-image: url('https://i.postimg.cc/Dw2D8Krx/soccer-ball.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-@keyframes rollAcross {
-  0% {
-    transform: translateX(-100px) rotate(0deg);
-  }
-  100% {
-    transform: translateX(calc(100vw + 100px)) rotate(360deg);
-  }
 }
 
 
